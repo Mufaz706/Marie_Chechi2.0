@@ -133,7 +133,7 @@ def new_member(bot: Bot, update: Update):
         for new_mem in new_members:
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
-                update.effective_message.reply_text("Master is in the houseeee, let's get this party started!")
+                update.effective_message.reply_text("Master is in the houseeee, let's get this party started!🥳🥳🎊🎊")
                 continue
 
             # Don't welcome yourself
@@ -347,7 +347,7 @@ def set_welcome(bot: Bot, update: Update) -> str:
         return ""
 
     sql.set_custom_welcome(chat.id, content or text, data_type, buttons)
-    msg.reply_text("Welcome message സെറ്റ് ചെയ്‌തിട്ടുണ്ട്‌! 🤩")
+    msg.reply_text("Welcome message സെറ്റ് ചെയ്‌തിട്ടുണ്ട്‌ ട്ടാ!🤩🥳")
 
     return "<b>{}:</b>" \
            "\n#SET_WELCOME" \
@@ -464,6 +464,7 @@ WELC_HELP_TXT = "നിങ്ങളുടെ ഗ്രൂപ്പിന്റ�
                 "remove it.\n" \
                 "If you're feeling fun, you can even set images/gifs/videos/voice messages as the welcome message by " \
                 "replying to the desired media, and calling /setwelcome.".format(dispatcher.bot.username)
+                 
 
 
 @run_async
@@ -508,10 +509,12 @@ __help__ = """
  - /resetwelcome: Default ആയിട്ടുള്ള സ്വാഗത സന്ദേശത്തിലേക്ക് തിരിച്ചു പോവുക...
  - /resetgoodbye: Default ആയിട്ടുള്ള Good Bye സന്ദേശത്തിലേക്ക് തിരിച്ചു പോവുക
  - /clearjoin <on/off>: *Member* ജോയിൻ ആകുമ്പോൾ ഉള്ള മെസ്സേജ് ഡിലീറ്റ് ചെയ്യാം..
- - /cleanwelcome <on/off>: On പുതിയ അംഗത്തിൽ, ചാറ്റ് സ്പാം ചെയ്യുന്നത് ഒഴിവാക്കാൻ മുമ്പത്തെ സ്വാഗത സന്ദേശം ഇല്ലാതാക്കാൻ ശ്രമിക്കുക.
+ - /cleanwelcome <on/off>: On പുതിയ അംഗത്തിൽ, ചാറ്റ് സ്പാം ചെയ്യുന്നത് ഒഴിവാക്കാൻ മുമ്പത്തെ സ്വാഗത സന്ദേശം ഇല്ലാതാക്കാൻ ശ്രമിക്കുക
 
  - /welcomehelp: ഇഷ്‌ടാനുസൃത സ്വാഗത / വിട സന്ദേശങ്ങൾക്കായി കൂടുതൽ ഫോർമാറ്റിംഗ് വിവരങ്ങൾ കാണുക.
 """.format(WELC_HELP_TXT)
+
+@Mallu_Cartoonzz
 
 __mod_name__ = "Welcomes/Goodbyes"
 
