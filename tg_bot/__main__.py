@@ -29,6 +29,11 @@ python-telegram-bot library ഉപയോഗിച്ചാണ്.... ഞാൻ �
 Using standard [Marie](http://telegram.dog/BanhammerMarie_bot) is always gonna be easier.
 എന്റെ ചേച്ചിയായ [Marie](http://telegram.dog/BanhammerMarie_bot) ഉപയോഗിക്കുന്നത് എല്ലായ്പ്പോഴും എളുപ്പമായിരിക്കും. മേരി ചേച്ചിക്ക് English മാത്രമേ അറിയൂ..
 
+joinButton = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Channel", url="https://t.me/Mallu_Cartoonzz")],
+        [InlineKeyboardButton(
+            "Group", url="https://t.me/Mallu_Cartoonzz_Chat")]
+
 """
 
 HELP_STRINGS = """
